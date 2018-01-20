@@ -1,0 +1,10 @@
+*.py[cod]
+node_modules/
+.idea
+./apps/zblog/migrations
+*/media
+./db
+./zblogsite/static
+./apps/zblog/static/bundles/*.*
+webpack-*.json
+npm-debug.log
