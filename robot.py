@@ -19,7 +19,7 @@ while True:
         if sphinx_text == "hi":
             response = "How do you do"
         else:
-            response = "OK!"
+            response = "What?"
         os.system("espeak -ven+f3 -k5 -s150 {0}".format(response))
 
     except sr.UnknownValueError:  
