@@ -4,5 +4,5 @@ apt-get update && apt-get install -y \
     python-pip \
     portaudio19-dev \
     python-pyaudio swig \
-    libpulse-dev espeak \
+    libpulse-dev \
 && rm -rf /var/lib/apt/lists/*
