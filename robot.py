@@ -1,13 +1,13 @@
 #!/usr/bin/env python
 #coding: utf8
 
-import pyttsx
+import pyttsx3
 import speech_recognition as sr  
 import os
    
 # obtain audio from the microphone  
 r = sr.Recognizer()  
-engine = pyttsx.init()
+engine = pyttsx3.init()
 
 while True:
     with sr.Microphone() as source:  
@@ -22,7 +22,7 @@ while True:
             response = "How do you do"
         else:
             response = "Yes"
-        engine.say(response)
+        engine.say(sphinx_text)
         engine.runAndWait()
 
     except sr.UnknownValueError:  
